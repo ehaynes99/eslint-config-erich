@@ -15,7 +15,6 @@ module.exports = {
       rules: {
         // note, with prettier integration, skip rules it covers like 'semi', 'quotes' or 'arrow-parens'
         'one-var': ['error', 'never'],
-        // 'one-var-declaration-per-line': ['error', 'always'],
         // prevent error for `while (true)` (but make sure to break!)
         'no-constant-condition': ['error', { checkLoops: false }],
         // use dot.notation for regular properties, but allow brackets for unusual names like headers
