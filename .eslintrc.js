@@ -33,7 +33,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
+      files: ['*.ts', '*.js'],
       env: {
         node: true,
       },
