@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-erich",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Eric's combined eslint config",
   "repository": "https://github.com/ehaynes99/eslint-config-erich-node",
   "homepage": "https://github.com/ehaynes99/eslint-config-erich-node",
@@ -13,7 +13,7 @@
   "main": ".eslintrc.js",
   "files": [
     ".eslintrc.js",
-    ".prettierrc"
+    ".prettierrc.js"
   ],
   "scripts": {
     "print-ts-config": "eslint --print-config *.ts",
