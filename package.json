@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-erich",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Eric's combined eslint config",
   "repository": "https://github.com/ehaynes99/eslint-config-erich-node",
   "homepage": "https://github.com/ehaynes99/eslint-config-erich-node",
@@ -10,9 +10,9 @@
   ],
   "license": "MIT",
   "author": "Eric Haynes <ehaynes99@gmail.com>",
-  "main": ".eslinrc.js",
+  "main": ".eslintrc.js",
   "files": [
-    ".eslinrc.js",
+    ".eslintrc.js",
     ".prettierrc"
   ],
   "scripts": {

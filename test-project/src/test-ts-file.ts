@@ -7,7 +7,7 @@ export const equals = () => {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const blah = function blah() {
-    console.log('woot');
+    console.log('woot')
   };
   console.log('***** blah:', blah);
   // const foo = 'oof'; console.log('foo');
