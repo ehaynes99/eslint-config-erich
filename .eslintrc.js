@@ -77,12 +77,12 @@ module.exports = {
       files: ['*.tsx', '*.jsx'],
       env: {
         browser: true,
-        // enable node if using server-side rendering
+        // enable if using server-side rendering
         node: false,
       },
       plugins: ['react'],
       extends: [
-        'plugin:react/recommended',
+        'plugin:react/recommended', //
         'plugin:react/jsx-runtime',
       ],
       rules: {
