@@ -22,13 +22,10 @@ module.exports = {
           'warn',
           { allowPattern: '^([a-z]+(_[a-z]+)+|[A-Z].*)$' },
         ],
-        'space-before-function-paren': [
-          'error',
-          { anonymous: 'never', asyncArrow: 'always', named: 'never' },
-        ],
         'spaced-comment': ['error', 'always', { block: { balanced: true } }],
         'no-duplicate-imports': 'error',
         'max-statements-per-line': ['error', { max: 1 }],
+        'eqeqeq': ['error', 'always', { null: 'never' }],
       },
     },
     {
