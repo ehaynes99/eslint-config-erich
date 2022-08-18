@@ -3,6 +3,10 @@ module.exports = {
   env: {
     jest: true,
     es2022: true,
+    // this is debatable, but generally true if you work mostly
+    // in backend, otherwise false. Below rules reverse it for (t|j)sx,
+    // but probably want to override in frontend projects
+    node: true,
   },
   overrides: [
     {
@@ -26,12 +30,6 @@ module.exports = {
         'no-duplicate-imports': 'error',
         'max-statements-per-line': ['error', { max: 1 }],
         'eqeqeq': ['error', 'always', { null: 'never' }],
-      },
-    },
-    {
-      files: ['*.ts', '*.js'],
-      env: {
-        node: true,
       },
     },
     {
