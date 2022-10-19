@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-erich",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Eric's combined eslint config",
   "repository": "https://github.com/ehaynes99/eslint-config-erich-node",
   "homepage": "https://github.com/ehaynes99/eslint-config-erich-node",

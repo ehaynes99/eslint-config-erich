@@ -57,6 +57,13 @@ module.exports = {
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-misused-promises': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/no-namespace': [
+          'error',
+          {
+            allowDeclarations: true,
+            allowDefinitionFiles: true,
+          },
+        ],
         '@typescript-eslint/no-unused-vars': [
           'error',
           {
