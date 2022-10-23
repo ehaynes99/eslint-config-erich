@@ -30,6 +30,7 @@ module.exports = {
         'no-duplicate-imports': 'error',
         'max-statements-per-line': ['error', { max: 1 }],
         'eqeqeq': ['error', 'always', { null: 'never' }],
+        'prefer-const': ['error', { destructuring: 'all' }],
       },
     },
     {
