@@ -12,7 +12,7 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
       extends: [
-        'eslint:recommended',
+        'eslint:recommended', //
         'prettier',
         'plugin:prettier/recommended',
       ],
@@ -23,7 +23,7 @@ module.exports = {
         'no-constant-condition': ['error', { checkLoops: false }],
         // use dot.notation for regular properties, but allow brackets for unusual names like headers
         'dot-notation': [
-          'warn',
+          'warn', //
           { allowPattern: '^([a-z]+(_[a-z]+)+|[A-Z].*)$' },
         ],
         'spaced-comment': ['error', 'always', { block: { balanced: true } }],
@@ -92,7 +92,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'react-hooks/rules-of-hooks': 'error',
         'react/jsx-curly-newline': [
-          'error',
+          'error', //
           { multiline: 'consistent', singleline: 'forbid' },
         ],
         'react/jsx-handler-names': 'off',
