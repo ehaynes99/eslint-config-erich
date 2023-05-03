@@ -121,7 +121,7 @@ module.exports = {
       rules: {
         // use dot.notation for regular properties, but allow brackets for unusual names like headers
         'dot-notation': ['warn', { allowPattern: '^([a-z]+(_[a-z]+)+|[A-Z].*)$' }],
-        'no-unused-expressions': 'error',
+        'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
       },
     },
   ],
