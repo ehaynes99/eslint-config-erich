@@ -44,6 +44,7 @@ module.exports = {
         'no-useless-rename': 'error',
         'object-shorthand': 'error',
         'one-var': ['error', 'never'],
+        'prefer-promise-reject-errors': 'error',
         'simple-import-sort/exports': 'error',
         'simple-import-sort/imports': [
           'error',
@@ -80,8 +81,8 @@ module.exports = {
       rules: {
         '@typescript-eslint/await-thenable': 'error',
         ...{
-          'dot-notation': 'off',
           // use dot.notation for regular properties, but allow brackets for unusual names like headers
+          'dot-notation': 'off',
           '@typescript-eslint/dot-notation': [
             'warn',
             {
