@@ -1,17 +1,16 @@
 {
   "name": "eslint-config-erich",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Eric's combined eslint config",
   "author": "Eric Haynes <ehaynes99@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/ehaynes99/eslint-config-erich-node",
   "homepage": "https://github.com/ehaynes99/eslint-config-erich-node",
   "files": [
-    "config"
+    "configs"
   ],
   "exports": {
-    ".": "./configs/eslintrc.js",
-    "./prettierrc": "./configs/prettierrc.js"
+    ".": "./configs/eslintrc.js"
   },
   "eslintConfig": {
     "extends": "./configs/eslintrc.js"
