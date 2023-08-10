@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-erich",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Eric's combined eslint config",
   "author": "Eric Haynes <ehaynes99@gmail.com>",
   "license": "MIT",
