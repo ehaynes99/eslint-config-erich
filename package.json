@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-erich",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Eric's combined eslint config",
   "author": "Eric Haynes <ehaynes99@gmail.com>",
   "license": "MIT",
@@ -21,28 +21,28 @@
     "prepublishOnly": "npm run print-ts-config > /dev/null && npm run print-js-config > /dev/null"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-etc": "^2.0.2",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-etc": "^2.0.3",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^46.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unicorn": "^49.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-etc": "^2.0.2",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-etc": "^2.0.3",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^46.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "typescript": "^4.9.5"
+    "eslint-plugin-unicorn": "^49.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "typescript": "^5.2.2"
   }
 }
