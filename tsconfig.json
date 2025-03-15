@@ -12,13 +12,14 @@
     "moduleResolution": "NodeNext",
     "noErrorTruncation": true,
     "noUnusedLocals": true,
-    "outDir": "../dist",
+    "rootDir": "./src",
+    "outDir": "dist",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
     "target": "ES2022"
   },
   "include": [
-    "**/*"
+    "src/**/*"
   ],
 }

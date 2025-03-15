@@ -18,7 +18,7 @@
     "extends": "./configs/eslintrc.js"
   },
   "scripts": {
-    "build": "tsc -b src",
+    "build": "tsc -b tsconfig.json",
     "lint": "eslint --cache .",
     "format": "pnpm lint --fix",
     "print-ts-config": "pnpm build && eslint -c ./dist/configs/eslint-config.js --print-config *.ts",
