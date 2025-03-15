@@ -1,48 +1,54 @@
 {
   "name": "eslint-config-erich",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Eric's combined eslint config",
   "author": "Eric Haynes <ehaynes99@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/ehaynes99/eslint-config-erich-node",
-  "homepage": "https://github.com/ehaynes99/eslint-config-erich-node",
+  "repository": "https://github.com/ehaynes99/eslint-config-erich",
+  "homepage": "https://github.com/ehaynes99/eslint-config-erich",
   "files": [
-    "configs"
+    "dist",
+    "src"
   ],
+  "type": "module",
   "exports": {
-    ".": "./configs/eslintrc.js"
+    ".": "./dist/configs/eslint-config.js"
   },
   "eslintConfig": {
     "extends": "./configs/eslintrc.js"
   },
   "scripts": {
-    "print-ts-config": "eslint -c ./configs/eslintrc.js --print-config *.ts",
-    "print-js-config": "eslint -c ./configs/eslintrc.js --print-config *.js",
+    "build": "tsc -b src",
+    "lint": "eslint --cache .",
+    "format": "pnpm lint --fix",
+    "print-ts-config": "pnpm build && eslint -c ./dist/configs/eslint-config.js --print-config *.ts",
+    "print-js-config": "pnpm build && eslint -c ./dist/configs/eslint-config.js --print-config *.js",
+    "print-react-config": "pnpm build && eslint -c ./dist/configs/eslint-config.js --print-config *.tsx",
+    "test": "npm run print-ts-config >> /dev/null && npm run print-js-config >> /dev/null && npm run print-react-config >> /dev/null && echo 'test success!'",
     "prepublishOnly": "npm run print-ts-config > /dev/null && npm run print-js-config > /dev/null"
   },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-etc": "^2.0.3",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^49.0.0",
-    "eslint-plugin-unused-imports": "^3.0.0"
+  "dependencies": {
+    "@eslint/compat": "^1.2.1",
+    "@typescript-eslint/experimental-utils": "^5.62.0",
+    "@typescript-eslint/utils": "^8.11.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-etc": "^5.2.1",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import-x": "^4.3.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint-plugin-yml": "^1.14.0",
+    "jiti": "^2.3.3",
+    "prettier": "^3.3.3",
+    "typescript": "*",
+    "typescript-eslint": "^8.11.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-etc": "^2.0.3",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^49.0.0",
-    "eslint-plugin-unused-imports": "^3.0.0",
-    "typescript": "^5.2.2"
+    "@types/eslint-plugin-security": "^3.0.0",
+    "@types/node": "^20.17.0",
+    "eslint": "^9.13.0"
   }
 }
