@@ -7,10 +7,9 @@ import reactConfig from './react.config.js'
 import tsConfig from './ts.config.js'
 import yamlConfig from './yaml.config.js'
 
-const gitignorePath = path.resolve(import.meta.dirname, '../../../../.gitignore')
+const gitignorePath = path.resolve(import.meta.dirname, '../../.gitignore')
 
 const config: TSESLint.FlatConfig.ConfigArray = [
-  //
   includeIgnoreFile(gitignorePath),
   {
     linterOptions: {
