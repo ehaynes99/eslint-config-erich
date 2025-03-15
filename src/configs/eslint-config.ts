@@ -3,6 +3,7 @@ import { includeIgnoreFile } from '@eslint/compat'
 import type { TSESLint } from '@typescript-eslint/utils'
 
 import jsConfig from './js.config.js'
+import reactConfig from './react.config.js'
 import tsConfig from './ts.config.js'
 import yamlConfig from './yaml.config.js'
 
@@ -17,6 +18,7 @@ const config: TSESLint.FlatConfig.ConfigArray = [
     },
   },
   ...jsConfig,
+  ...reactConfig,
   ...tsConfig,
   ...yamlConfig,
 ]
