@@ -1,3 +1,3 @@
-import erichConfig from './dist/configs/eslint-config.js'
+import config from 'eslint-config-erich'
 
-export default erichConfig
+export default config

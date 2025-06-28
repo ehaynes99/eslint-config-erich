@@ -1,4 +1,5 @@
 import type { TSESLint } from '@typescript-eslint/utils'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import eslintPluginImportX from 'eslint-plugin-import-x'
 import pluginSecurity from 'eslint-plugin-security'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
@@ -41,8 +42,7 @@ const config: TSESLint.FlatConfig.ConfigArray = combineConfigs(
           groups: [
             // Side effect imports.
             ['^\\u0000'],
-            // A single group, with the three ordered sections of node:, 3rd party packages, then our own @openphone packages.
-            ['^node:', '^@?(?!openphone)\\w', '^@?\\w'],
+            ['^node:', '^@?\\w'],
             // Absolute imports and other imports such as Vue-style `@/foo`.
             // Anything not matched in another group.
             ['^'],
@@ -63,12 +63,12 @@ const config: TSESLint.FlatConfig.ConfigArray = combineConfigs(
       'import-x/parsers': {
         '@typescript-eslint/parser': ['.ts'],
       },
-      'import-x/resolver': {
-        typescript: {
-          project: true,
-        },
-        node: true,
-      },
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+          project: ['./tsconfig.json', './{src,test}/tsconfig.json'],
+        }),
+      ],
     },
     rules: {
       'import-x/first': 'error',

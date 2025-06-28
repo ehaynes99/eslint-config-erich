@@ -2,7 +2,7 @@ import { fixupPluginRules } from '@eslint/compat'
 import type { TSESLint } from '@typescript-eslint/utils'
 import tseslint from 'typescript-eslint'
 
-import ehaynesPlugin from '../plugins/index.js'
+import localPlugin from '../plugins/index.js'
 import jsConfig from './js.config.js'
 import prettierConfig from './prettier.config.js'
 
@@ -12,7 +12,7 @@ const config: TSESLint.FlatConfig.ConfigArray = tseslint.config(
     extends: [...jsConfig, ...tseslint.configs.recommended],
     plugins: {
       '@typescript-eslint': tseslint.plugin,
-      '@ehaynes': fixupPluginRules(ehaynesPlugin),
+      '@local': fixupPluginRules(localPlugin),
     },
     languageOptions: {
       parser: tseslint.parser,
@@ -23,7 +23,7 @@ const config: TSESLint.FlatConfig.ConfigArray = tseslint.config(
       },
     },
     rules: {
-      '@ehaynes/no-implicit-any-catch': 'error',
+      '@local/no-implicit-any-catch': 'error',
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
       ...{

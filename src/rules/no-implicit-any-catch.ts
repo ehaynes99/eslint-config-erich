@@ -1,8 +1,6 @@
 /**
  * @license Use of this source code is governed by an MIT-style license that
  * can be found in the LICENSE file at https://github.com/cartant/eslint-plugin-etc
- *
- * However, there have been compatibility issues with the source package, and I only want this one rule from it.
  */
 
 import {

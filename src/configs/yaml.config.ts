@@ -6,7 +6,7 @@ import { combineConfigs } from '../utils/index.js'
 const config: TSESLint.FlatConfig.ConfigArray = combineConfigs({
   files: ['**/*.yaml', '**/*.yml'],
   extends: [...eslintPluginYml.configs['flat/standard']],
-  ignores: ['deployment*/templates/**/*.{yaml,yml}'],
+  ignores: ['deployment*/templates/**/*.{yaml,yml}', '**/pnpm-lock.yaml'],
   rules: {
     'yml/no-empty-mapping-value': 'off',
     'yml/quotes': ['error', { prefer: 'single' }],
